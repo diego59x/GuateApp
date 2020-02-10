@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/guate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="476dp"
+        android:contentDescription="@string/imagen_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.372"
+        app:srcCompat="@drawable/guate2" />
+
+    <ImageButton
+        android:id="@+id/star"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="290dp"
+        android:contentDescription="@string/star_button"
+        android:onClick="set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toEndOf="@+id/guate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+    <TextView
+        android:id="@+id/Guate"
+        android:layout_width="179dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/text_g"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Guate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/set_name"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="62dp"
+
+        android:layout_marginBottom="280dp"
+
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/name2"
+        android:inputType="textPersonName"
+        android:text="@string/name2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/guate"
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="239dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="250dp"
+        android:text="@string/the_name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_name"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <Button
+        android:id="@+id/antigua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/antigua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/peten" />
+
+    <Button
+        android:id="@+id/peten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+
+        android:onClick="onClick"
+        android:text="@string/peten"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/izabal"
+        tools:ignore="ButtonStyle" />
+
+    <Button
+        android:id="@+id/izabal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="@string/izabal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:autoLink="web"
+            android:scrollbars="vertical"
+            android:text="@string/infog" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

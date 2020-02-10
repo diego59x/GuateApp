@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/activity_main">
+
+
+    <fragment
+        android:id="@+id/activity_main"
+        android:name="com.example.guateapp.MainActivity"
+        android:label="Guatemala"
+        tools:layout="@layout/activity_main">
+
+
+        <action
+            android:id="@+id/action_activity_main_to_antigua"
+            app:destination="@id/antigua" />
+        <action
+            android:id="@+id/action_activity_main_to_izabal"
+            app:destination="@id/izabal" />
+        <action
+            android:id="@+id/action_activity_main_to_peten"
+            app:destination="@id/peten" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/antigua"
+        android:name="com.example.guateapp.Antigua"
+        android:label="fragment_antigua"
+        tools:layout="@layout/fragment_antigua">
+        <action
+            android:id="@+id/action_antigua_to_coment"
+            app:destination="@id/coment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coment"
+        android:name="com.example.guateapp.Coment"
+        android:label="fragment_coment"
+        tools:layout="@layout/fragment_coment">
+        <action
+            android:id="@+id/action_coment_to_activity_main"
+            app:destination="@id/activity_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/izabal"
+        android:name="com.example.guateapp.Izabal"
+        android:label="fragment_izabal"
+        tools:layout="@layout/fragment_izabal">
+        <action
+            android:id="@+id/action_izabal_to_coment"
+            app:destination="@id/coment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peten"
+        android:name="com.example.guateapp.Peten"
+        android:label="fragment_peten"
+        tools:layout="@layout/fragment_peten">
+        <action
+            android:id="@+id/action_peten_to_coment"
+            app:destination="@id/coment" />
+    </fragment>
+</navigation>

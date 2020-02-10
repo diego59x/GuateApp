@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">GuateApp</string>
+    <string name="imagen_1">imagen1</string>
+    <string name="star_button">star_button</string>
+    <string name="text_g">Guatemala</string>
+    <string name="name">Nombre:</string>
+    <string name="name2"></string>
+    <string name="the_name" />
+    <string name="peten">Peten</string>
+    <string name="izabal">Izabal</string>
+    <string name="antigua">Antigua</string>
+    <string name="infog">Guatemala, un país de América Central al sur de México, tiene volcanes, bosques tropicales y antiguos sitios mayas. La capital, Ciudad de Guatemala, cuenta con el imponente Palacio Nacional de la Cultura y el Museo Nacional de Arqueología y Etnología. Antigua Guatemala, al oeste de la capital, contiene edificios coloniales españoles preservados. El lago de Atitlán, formado en un enorme cráter volcánico, está rodeado de campos de café y aldeas.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_asd">asd</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="nav_graph">nav</string>
+    <string name="imagen_a" />
+    <string name="comentar">Comentario</string>
+    <string name="enviar">Enviar</string>
+    <string name="info_izabal">Izabal está situado en la región Nor-Oriental de Guatemala. Limita al Norte con el departamento de Petén, el distrito de Toledo (Belice) y el mar Caribe; al Sur con el departamento de Zacapa; al Este con la República de Honduras; y al Oeste con el departamento de Alta Verapaz. La cabecera departamental, Puerto Barrios, se encuentra a una distancia de 308 km. de la capital de la república. En el centro del departamento se encuentra el lago de Izabal, el más grande de Guatemala.</string>
+    <string name="info_antigua">La ciudad de Santiago de los Caballeros de Guatemala, cuyo nombre oficial e histórico es Muy Noble y Muy Leal Ciudad de Santiago de los Caballeros de Guatemala y popularmente nombrada en la actualidad como Antigua Guatemala, es cabecera del municipio homónimo y del departamento de Sacatepéquez, Guatemala; se ubica a aproximadamente 25 kilómetros al oeste de la capital de la República de Guatemala.</string>
+    <string name="info_peten">Petén (en itzá: Noj Petén, ‘Gran Isla’)?1​ es un departamento de Guatemala situado en el extremo septentrional del país. Limita al norte con México con los estados de Quintana Roo, Campeche; al sur con los departamentos de Izabal y Alta Verapaz; al este con Belice con los distritos Cayo y Toledo; y al oeste con México con los estado de Tabasco y Chiapas.</string>
+    <string name="new_comentario">Error</string>
+
+</resources>
